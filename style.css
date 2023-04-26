@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'popins',sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+   
+     background-image: url(../src/assets/images/ut2.png); 
+     background-size: cover;
+     background-position: center;
+}
+.header-text{
+  margin-top: 3%;
+  font-size: 30px;
+}
+.header-text h1 {
+    font-size: 30px;
+    margin-top: 30px;
+    
+}
+.header-text p{
+    font-size: 30px;
+}
+.header-text h1 span{
+    color: #963196;
+}
+.container{
+ padding: 10px 10px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+nav img{
+    width: 100px;
+    height: 100px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    margin-left: 200px;
+}
+nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 17px;
+   position: relative;
+    margin-left: 20px;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #963196;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+
+/* ==========ccc////////////////////// */
+#contact{
+    margin-top: 100px;
+    height: 100vh;
+}
+.contact-left{
+    flex-basis:35%;
+
+}
+.contact-right{
+   flex-basis: 600px ;
+
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #963196;
+    display: inline-block;
+
+}
+.social-icons a:hover{
+    color: white;
+    transform: translateY(-5px);
+}
+.btn{
+    
+    margin-top: 50px;
+    color: aliceblue;
+    border: solid 2px #963196 ;
+}
+.btn2{
+margin-left: 20px;
+
+
+}
+
+.contact-right form{
+    width: 100%;
+}
+form input , form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.copyright{
+    text-align: center;
+}
+button{
+    border: 2px solid plum;
+}
+/* -------------responsive---------------- */
+.fas{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: none;
+    }
+    .header-text{
+        margin-top: 50%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background-color: #963196;
+        position: absolute;
+        top: 0;
+        right: 10px; 
+        width: 200px;
+        height: 150px;
+        padding-top: 10px;
+        z-index: 2;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+
+    }
+    .fas{
+        position: absolute;
+        top: 25px;
+        left: 90%;
+        cursor: pointer;
+    
+    }
+    .contact-left ,.contact-right{
+        flex-basis: 100%;
+    }
+    
+ 
+
+}
+#msg{
+    color: #963196;
+    
+    display: block;
+}
+
